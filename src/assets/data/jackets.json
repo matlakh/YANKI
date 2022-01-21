@@ -1,0 +1,13 @@
+{
+  "jackets": [
+    {
+      "id": 0,
+      "name": "",
+      "status": true,
+      "productImg":"/img/jacket1.jpg",
+      "price": "",
+      "sizes": ["XS", "S", "M"],
+      "colors": ["white", "blue", "yellow"]
+    }
+  ]
+}

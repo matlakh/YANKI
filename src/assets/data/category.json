@@ -1,0 +1,24 @@
+{
+  "category": [
+    {
+      "id": 0,
+      "name": "Куртки",
+      "previewImg": "/img/category1.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Пальто",
+      "previewImg": "/img/category2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Шубы",
+      "previewImg": "/img/category3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Парки",
+      "previewImg": "/img/category4.jpg"
+    }
+  ]
+}

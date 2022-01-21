@@ -1,0 +1,339 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  background: transparent;
+}
+
+.header__inner {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 40px;
+  width: 100%;
+}
+
+.header__menu-button span {
+  width: 26px;
+  height: 4px;
+  background: #e0bea2;
+  position: relative;
+}
+
+.header__menu-button span::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  left: 0px;
+  top: 10px;
+  background: #e0bea2;
+}
+
+.header__menu-button span::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 4px;
+  left: 0px;
+  top: -10px;
+  background: #e0bea2;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 235px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__nav li a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #252525;
+}
+
+.header__nav .active-link a {
+  color: #e0bea2;
+}
+
+.header__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 130px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #252525;
+}
+
+.header__function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 200px;
+  width: 100%;
+}
+
+.header__function--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.header__menu p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252525;
+  cursor: pointer;
+}
+
+.header__menu--main {
+  margin-right: 30px;
+  position: relative;
+}
+
+.header__menu--main::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  right: -20px;
+  background-image: url(../img/arrow-y.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.main__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__aside {
+  max-width: 150px;
+  width: 100%;
+}
+
+.main__aside--title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #252525;
+  margin-bottom: 30px;
+}
+
+.main__aside--item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252525;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.main__aside--item.active {
+  color: #e0bea2;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__product {
+  max-width: 310px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.main__product img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.main__product h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #252525;
+  margin-bottom: 8px;
+}
+
+.main__product h4 span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #e0bea2;
+  display: none;
+}
+
+.main__product h4 span.active {
+  display: inline;
+}
+
+.main__product--sizes {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(37, 37, 37, 0.5);
+  margin-bottom: 5px;
+}
+
+.main__product--color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 60px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__product--color div {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.main__product--color .white {
+  background: #ffffff;
+  border: 0.3px solid #25252549;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main__product--color .blue {
+  background: #6f83a4;
+}
+
+.main__product--color .yellow {
+  background: #f1ddaa;
+}
+/*# sourceMappingURL=catalog.css.map */
